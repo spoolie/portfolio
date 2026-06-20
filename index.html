@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maha Mir | CS Portfolio</title>
+    <style>
+        :root {
+            --bg: #0f172a;
+            --text: #cbd5e1;
+            --header: #f8fafc;
+            --accent: #38bdf8;
+            --card-bg: #1e293b;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text);
+            line-height: 1.6;
+            margin: 0;
+            padding: 2rem;
+        }
+        max-width { max-width: 800px; margin: 0 auto; display: block; }
+        header { margin-bottom: 3rem; border-bottom: 1px solid #334155; padding-bottom: 2rem; }
+        h1 { color: var(--header); margin: 0 0 0.5rem 0; font-size: 2.5rem; }
+        h2 { color: var(--header); margin-top: 0; }
+        a { color: var(--accent); text-decoration: none; font-weight: 500; }
+        a:hover { text-decoration: underline; }
+        .project-card {
+            background: var(--card-bg);
+            padding: 2rem;
+            border-radius: 12px;
+            margin-bottom: 2.5rem;
+            border: 1px solid #334155;
+        }
+        .tags { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1rem 0; }
+        .tag { background: #334155; color: var(--header); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.85rem; }
+        video { width: 100%; border-radius: 8px; margin: 1rem 0; border: 1px solid #475569; background: #000; }
+        .links { display: flex; gap: 1.5rem; margin-top: 1rem; }
+    </style>
+</head>
+<body>
+
+<max-width>
+    <!-- TOP HEADER SECTION -->
+    <header>
+        <h1>Maha Mir</h1>
+        <p>Computer Science Graduate @ University at Buffalo</p>
+        <div class="links">
+            <a href="https://github.com" target="_blank">GitHub</a>
+            <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+            <a href="mailto:maha.mir@icloud.com">Email</a>
+        </div>
+    </header>
+
+    <main>
+        <h2>Featured Projects</h2>
+
+        <div class="project-card">
+            <h3>CSE 442 - Software Engineering Project</h3>
+            <p>This was a Software Engineering course I took in my senior year at the University at Buffalo. My team consisted of four other members, and I took ownership of designing our presentation strategy and user flows. I was one of two front-end developers for this project so design choice was not up to me.</p>
+            
+            <div class="tags">
+                <span class="tag">Figma</span>
+                <span class="tag">UI/UX Design</span>
+                <span class="tag">Project Walkthrough</span>
+            </div>
+
+            <!-- VIDEO WALKTHROUGH -->
+            <h4>Project Walkthrough (With Audio)</h4>
+            <p style="font-size: 0.9rem; color: #94a3b8;">Please note: This presentation was structured in the form of a narrative story rather than a traditional feature walkthrough. I designed the visual slides and presentation layout for my engineering team.</p>
+            <video controls>
+                <source src="442 Presentation.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- FIGMA CALL-TO-ACTION INTERFACE -->
+            <h4>Interactive Design Prototype</h4>
+            <div style="background: #1e293b; border: 2px dashed #475569; border-radius: 8px; padding: 2.5rem; text-align: center; margin-top: 1rem;">
+                <p style="margin-top: 0; font-size: 1.1rem; color: #f8fafc;">Interactive Figma Workspace Available</p>
+                <p style="font-size: 0.9rem; color: #94a3b8; margin-bottom: 1.5rem;">Click the button below to launch the live "Purple Worms" interactive desktop wireframe flow directly inside Figma.</p>
+                <a href="https://www.figma.com/design/XHc0VaZDkvXHVTRv43yUMr/Wireframing---Purple-Worms?node-id=1105426-364&t=8lLgaftsMCKUSstn-1" 
+                   target="_blank" 
+                   style="background: #38bdf8; color: #0f172a; padding: 0.6rem 1.5rem; border-radius: 6px; font-weight: bold; display: inline-block; text-decoration: none;">
+                   Launch Interactive Prototype
+                </a>
+            </div>
+
+        </div>
+
+    </main>
+</max-width>
+
+</body>
+</html>
